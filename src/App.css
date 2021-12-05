@@ -3,8 +3,24 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  background-color: rgb(203, 221, 255);
+  height: 100vh;
 }
 
+/* .Game {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.QuizForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

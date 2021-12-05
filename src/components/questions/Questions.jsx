@@ -52,16 +52,16 @@ const Question = ({
   return (
     <div className="question">
       <h1>Question {currQues + 1}</h1>
+        {error && <Error>Please select one answer</Error>}
       <div className="singleQuestion">
         <h2
           dangerouslySetInnerHTML={{ __html: questions[currQues].question }}
         ></h2>
         <div className="options">
-          {error && <Error>Please select one answer</Error>}
           {options &&
             options.map((i) => (
               <button
-                // variant="outline-success"
+                variant="outline-dark"
                 onClick={() => handleCheck(i)}
                 className={` singleOption ${selected && handleSelect(i)}`}
                 key={i}

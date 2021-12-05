@@ -35,43 +35,45 @@ function App() {
   };
   return (
     <div className="App">
+      <Header />
       <Router>
-        <Header />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            element={
-              <Home
-                name={name}
-                setName={setName}
-                // amount={setAmount}
-                type={setType}
-                fetchQuestions={fetchQuestions}
-              />
-            }
-          />
-          <Route
-            exact
-            path="/quiz"
-            element={
-              <Game
-                name={name}
-                questions={questions}
-                score={score}
-                setScore={setScore}
-                // setQuestions={setQuestions}
-              />
-            }
-          />
-          <Route
-            exact
-            path="/result"
-            element={<Result name={name} score={score} />}
-          />
-        </Switch>
-        <Footer />
+        <div className="Game">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              element={
+                <Home
+                  name={name}
+                  setName={setName}
+                  // amount={setAmount}
+                  type={setType}
+                  fetchQuestions={fetchQuestions}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/quiz"
+              element={
+                <Game
+                  name={name}
+                  questions={questions}
+                  score={score}
+                  setScore={setScore}
+                  // setQuestions={setQuestions}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/result"
+              element={<Result name={name} score={score} />}
+            />
+          </Switch>
+        </div>
       </Router>
+      <Footer />
     </div>
   );
 }

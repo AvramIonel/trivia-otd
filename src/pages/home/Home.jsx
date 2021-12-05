@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
 import { Categories } from "../../services/Categories";
 import Error from "../../components/error/Error";
+import "./home.css";
 
 const Home = ({ name, setName, fetchQuestions }) => {
-  // const [amount, setAmount] = useState("");
   const [category, setCategory] = useState();
   const [difficulty, setDifficulty] = useState("");
   const [type, setType] = useState("");
@@ -24,14 +24,14 @@ const Home = ({ name, setName, fetchQuestions }) => {
     }
   };
   return (
-    <div>
+    <div className="content">
       {/* I`ll use the QuizForm and some local storage for name and score */}
       <div>
         <div className="settings">
-          <span>Quiz Settings</span>
+          <span style={{ fontSize: 25 }}>Quiz Settings</span>
         </div>
-        <div>
-          {error && <Error>Please Fill all the feilds</Error>}
+        {error && <Error>Please Fill all the feilds</Error>}
+        <div className="settings__select">
           <Form className="quiz-form" onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicName">
               <Form.Label>Your Name</Form.Label>
@@ -41,20 +41,6 @@ const Home = ({ name, setName, fetchQuestions }) => {
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
-            {/* <Form.Group controlId="formBasicNoQuestions">
-            <Form.Label>Select No of questions</Form.Label>
-            <Form.Control
-              as="select"
-              size="sm"
-              custom
-              onChange={(e) => setAmount(e.target.value)}
-              value={amount}
-            >
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-            </Form.Control>
-          </Form.Group> */}
             <Form.Group controlId="formBasicCategories">
               <Form.Label>Select Category</Form.Label>
               <Form.Control
@@ -70,11 +56,6 @@ const Home = ({ name, setName, fetchQuestions }) => {
                     {cat.name}
                   </option>
                 ))}
-                {/* {quizCategories.map((cat) => {
-              <option key={cat.name} value={cat.id}>
-                {cat.name}
-              </option>;
-            })} */}
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="formBasicDifficulty">
@@ -107,10 +88,10 @@ const Home = ({ name, setName, fetchQuestions }) => {
               </Form.Control>
             </Form.Group>
           </Form>
+        </div>
           <Button variant="primary" type="submit" onClick={handleSubmit}>
             Start Quiz
           </Button>
-        </div>
       </div>
     </div>
   );

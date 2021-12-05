@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 import Question from "../../components/questions/Questions";
+import './game.css'
 
 const Game = ({ name, questions, score, setScore, setQuestions }) => {
   const [options, setOptions] = useState();
@@ -24,11 +25,11 @@ const Game = ({ name, questions, score, setScore, setQuestions }) => {
   };
 
   return (
-    <div>
-      <span>Welcome, {name}</span>
+    <div className='quiz'>
+      <span className='subtitle'>Welcome, {name}</span>
       {questions ? (
         <>
-          <div>
+          <div className='quizInfo'>
             <span>{questions[currQues].category}</span>
             <span>Score: {score}</span>
           </div>
