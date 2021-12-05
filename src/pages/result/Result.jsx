@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
-const Result = () => {
+const Result = ({ name, score }) => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!name) {
+      navigate("/");
+    }
+  }, [name, navigate]);
   return (
     <div>
-      The page with final result of curr game and maybe an history of other
-      games
+      <span>Final Score: {score}</span>
+      <Button variant="primary" href="/">
+        Go to Home Page
+      </Button>
     </div>
   );
 };
 
 export default Result;
+

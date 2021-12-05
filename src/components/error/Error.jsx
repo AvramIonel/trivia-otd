@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Error = () => {
+const Error = ({children}) => {
   return (
     <div>
-      This will contain all the error mesages from app
+      {children}
     </div>
   )
 }

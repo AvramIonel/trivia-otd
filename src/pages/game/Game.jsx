@@ -1,11 +1,54 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { Spinner } from "react-bootstrap";
+import Question from "../../components/questions/Questions";
 
-const Game = () => {
+const Game = ({ name, questions, score, setScore, setQuestions }) => {
+  const [options, setOptions] = useState();
+  const [currQues, setCurrQues] = useState(0);
+
+  useEffect(() => {
+    setOptions(
+      questions &&
+        handleShuffle([
+          questions[currQues]?.correct_answer,
+          ...questions[currQues]?.incorrect_answers,
+        ])
+    );
+  }, [currQues, questions]);
+
+  console.log(questions);
+  console.log(options);
+
+  const handleShuffle = (options) => {
+    return options.sort(() => Math.random() - 0.5);
+  };
+
   return (
     <div>
-      on this page will be the game
-    </div>
-  )
-}
+      <span>Welcome, {name}</span>
+      {questions ? (
+        <>
+          <div>
+            <span>{questions[currQues].category}</span>
+            <span>Score: {score}</span>
+          </div>
 
-export default Game
+          <Question
+            currQues={currQues}
+            setCurrQues={setCurrQues}
+            questions={questions}
+            options={options}
+            correct={questions[currQues]?.correct_answer}
+            score={score}
+            setScore={setScore}
+            setQuestions={setQuestions}
+          />
+        </>
+      ) : (
+        <Spinner animation="border" />
+      )}
+    </div>
+  );
+};
+
+export default Game;
