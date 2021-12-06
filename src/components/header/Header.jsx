@@ -15,11 +15,11 @@ const Header = () => {
   // </Navbar>
   <Navbar variant='dark' bg='dark' fixed='top'>
   <Container fluid>
-    <Navbar.Brand href="#home">Trivia APP</Navbar.Brand>
+    <Navbar.Brand href="/">Trivia APP</Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
       <Navbar.Text>
-        Signed in as: <a href="#login">AIF</a>
+        Player name: <a>{localStorage.getItem("playerValueInLocalStorage")}</a>
       </Navbar.Text>
     </Navbar.Collapse>
   </Container>

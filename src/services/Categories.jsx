@@ -14,13 +14,13 @@ export const Categories = [
   { id: 21, name: "Sports" },
   { id: 22, name: "Geography" },
   { id: 23, name: "History" },
-  { id: 24, name: "Politics" },
-  { id: 25, name: "Art" },
+  // { id: 24, name: "Politics" },
+  // { id: 25, name: "Art" }, - dosen`t work
   { id: 26, name: "Celebrities" },
   { id: 27, name: "Animals" },
   { id: 28, name: "Vehicles" },
   { id: 29, name: "Entertainment: Comics" },
-  { id: 30, name: "Science: Gadgets" },
+  // { id: 30, name: "Science: Gadgets" },
   { id: 31, name: "Entertainment: Japanese Anime & Manga" },
   { id: 32, name: "Entertainment: Cartoon & Animations" },
 ];

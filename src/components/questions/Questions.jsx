@@ -76,7 +76,7 @@ const Question = ({
             Quit
           </Button>
           <Button variant="success" onClick={handleNext}>
-            {currQues > 20 ? "Submit" : "Next Question"}
+            {currQues > 8 ? "Submit" : "Next Question"}
           </Button>
         </div>
       </div>

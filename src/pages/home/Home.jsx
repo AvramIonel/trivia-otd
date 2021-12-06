@@ -28,7 +28,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
       {/* I`ll use the QuizForm and some local storage for name and score */}
       <div>
         <div className="settings">
-          <span style={{ fontSize: 25 }}>Quiz Settings</span>
+          <span style={{ fontSize: 25 }, {alignItems: 'center'}}>Quiz Settings</span>
         </div>
         {error && <Error>Please Fill all the feilds</Error>}
         <div className="settings__select">

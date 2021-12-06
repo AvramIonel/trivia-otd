@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +14,13 @@ import Result from "./pages/result/Result";
 
 function App() {
   const [questions, setQuestions] = useState("");
-  const [name, setName] = useState();
+  const [name, setName] = useState(
+    localStorage.getItem("playerValueInLocalStorage") || ""
+  );
+  useEffect(() => {
+    localStorage.setItem("playerValueInLocalStorage", name);
+  }, [name]);
+  const onChange = (e) => setName(e.target.name);
   const [score, setScore] = useState(0);
   // const [amount, setAmount] = useState("");
   const [type, setType] = useState("");

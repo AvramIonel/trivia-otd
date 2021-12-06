@@ -10,8 +10,18 @@ const Result = ({ name, score }) => {
     }
   }, [name, navigate]);
   return (
-    <div>
-      <span>Final Score: {score}</span>
+    <div
+      style={
+        ({ display: "flex" },
+        { flexDirection: "column" },
+        { justifyContent: "space-around" },
+        { alignItems: "center" },
+        { padding: "20px" })
+      }
+    >
+      <span style={({ alignItems: "center" }, { padding: "15px" })}>
+        Final Score: {score}
+      </span>
       <Button variant="primary" href="/">
         Go to Home Page
       </Button>
@@ -20,4 +30,3 @@ const Result = ({ name, score }) => {
 };
 
 export default Result;
-
