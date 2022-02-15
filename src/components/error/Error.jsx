@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component created to reuse in app every time we need to display an error
 const Error = ({ children }) => {
   return (
     <div

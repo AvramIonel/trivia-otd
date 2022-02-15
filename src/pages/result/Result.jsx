@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
+
+// This page is for displaing the score to the user
 const Result = ({ name, score }) => {
   const navigate = useNavigate();
   useEffect(() => {

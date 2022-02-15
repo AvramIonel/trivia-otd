@@ -5,6 +5,7 @@ import { Categories } from "../../services/Categories";
 import Error from "../../components/error/Error";
 import "./home.css";
 
+// This page is the form from Bootstrap ^5.1.3 for selecting the category, dificulty and type of answers
 const Home = ({ name, setName, fetchQuestions }) => {
   const [category, setCategory] = useState();
   const [difficulty, setDifficulty] = useState("");
@@ -13,6 +14,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
 
   const navigate = useNavigate();
 
+  // This sends us to the quiz
   const handleSubmit = () => {
     if (!category || !difficulty || !type || !name) {
       setError(true);
@@ -28,7 +30,9 @@ const Home = ({ name, setName, fetchQuestions }) => {
       {/* I`ll use the QuizForm and some local storage for name and score */}
       <div>
         <div className="settings">
-          <span style={{ fontSize: 25 }, {alignItems: 'center'}}>Quiz Settings</span>
+          <span style={({ fontSize: 25 }, { alignItems: "center" })}>
+            Quiz Settings
+          </span>
         </div>
         {error && <Error>Please Fill all the feilds</Error>}
         <div className="settings__select">
@@ -89,9 +93,9 @@ const Home = ({ name, setName, fetchQuestions }) => {
             </Form.Group>
           </Form>
         </div>
-          <Button variant="primary" type="submit" onClick={handleSubmit}>
-            Start Quiz
-          </Button>
+        <Button variant="primary" type="submit" onClick={handleSubmit}>
+          Start Quiz
+        </Button>
       </div>
     </div>
   );

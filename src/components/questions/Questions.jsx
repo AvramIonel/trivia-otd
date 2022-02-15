@@ -4,6 +4,7 @@ import Error from "../../components/error/Error";
 import { Button } from "react-bootstrap";
 import "./questions.css";
 
+// This component is for the GAME page, and gives most of the styles of app and a big part of it`s functionality
 const Question = ({
   currQues,
   setCurrQues,
@@ -17,6 +18,7 @@ const Question = ({
   const [selected, setSelected] = useState();
   const [error, setError] = useState(false);
 
+  // For some style based on the correct answer, used React Bootstrap buttons style - see in css
   const handleSelect = (i) => {
     if (selected === i && selected === correct) {
       return "select";
@@ -26,18 +28,20 @@ const Question = ({
       return "select";
     }
   };
+  // This take care of the score
   const handleCheck = (i) => {
     setSelected(i);
     if (i === correct) setScore(score + 1);
     setError(false);
   };
-
+  // For quiting the quiz
   const handleQuit = () => {
     setCurrQues(0);
     setQuestions();
   };
 
   const navigate = useNavigate();
+  // We need this in order to go to the next question and also to set an error if we don`t give any answer
   const handleNext = () => {
     if (currQues > 8) {
       navigate("/result");
@@ -52,11 +56,13 @@ const Question = ({
   return (
     <div className="question">
       <h1>Question {currQues + 1}</h1>
-        {error && <Error>Please select one answer</Error>}
+      {error && <Error>Please select one answer</Error>}
       <div className="singleQuestion">
-        <h2
-          dangerouslySetInnerHTML={{ __html: questions[currQues].question }}
-        ></h2>
+        {questions[currQues] && (
+          <h2
+            dangerouslySetInnerHTML={{ __html: questions[currQues].question }}
+          ></h2>
+        )}
         <div className="options">
           {options &&
             options.map((i) => (
@@ -67,7 +73,7 @@ const Question = ({
                 key={i}
                 disabled={selected}
               >
-                {i}
+                <div dangerouslySetInnerHTML={{ __html: i }}></div>
               </button>
             ))}
         </div>
@@ -83,5 +89,5 @@ const Question = ({
     </div>
   );
 };
-
+// Used dangerouslySetInnerHTML to get rid of special caracters obtained from the database in my app
 export default Question;

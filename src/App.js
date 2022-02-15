@@ -22,11 +22,10 @@ function App() {
   }, [name]);
   const onChange = (e) => setName(e.target.name);
   const [score, setScore] = useState(0);
-  // const [amount, setAmount] = useState("");
   const [type, setType] = useState("");
 
+  // GET the questions from API
   const fetchQuestions = async (
-    // amount = "",
     category = "",
     difficulty = "",
     type = ""
@@ -52,7 +51,6 @@ function App() {
                 <Home
                   name={name}
                   setName={setName}
-                  // amount={setAmount}
                   type={setType}
                   fetchQuestions={fetchQuestions}
                 />
