@@ -51,7 +51,7 @@ function App() {
                 <Home
                   name={name}
                   setName={setName}
-                  type={setType}
+                  // type={setType}
                   fetchQuestions={fetchQuestions}
                 />
               }
