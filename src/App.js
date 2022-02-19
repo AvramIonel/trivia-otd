@@ -20,9 +20,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem("playerValueInLocalStorage", name);
   }, [name]);
-  const onChange = (e) => setName(e.target.name);
+  // const onChange = (e) => setName(e.target.name);
   const [score, setScore] = useState(0);
-  const [type, setType] = useState("");
+  // const [type, setType] = useState("");
 
   // GET the questions from API
   const fetchQuestions = async (
