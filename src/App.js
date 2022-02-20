@@ -36,7 +36,6 @@ function App() {
       }${difficulty && `&difficulty=${difficulty}`}${type && `&type=${type}`}`
     );
     setQuestions(data.results);
-    // console.log(data);
   };
   return (
     <div className="App">
