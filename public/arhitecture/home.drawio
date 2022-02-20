@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="y4AmVrFqyB3-X8S6Mhtv" name="Page-1">
+        <mxGraphModel dx="3762" dy="1234" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" background="#03DDFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Header&amp;nbsp;&lt;br style=&quot;font-size: 18px;&quot;&gt;Contains a link to Quizz settings page and Player name" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-840" y="27" width="1680" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Footer&lt;br style=&quot;font-size: 18px;&quot;&gt;Contains links to 1-Open Trivia DataBase&lt;br style=&quot;font-size: 18px;&quot;&gt;2-GitHub repository of the project&lt;br style=&quot;font-size: 18px;&quot;&gt;3-My LinkedIn page&lt;/font&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-840" y="1170" width="1680" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="8" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Quiz Settings" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="-372" y="168" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="9" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Player name&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;Select Category - data is in services - Categories.jsx&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;Select Difficulty - the difficulties are hardcoded in Home.jsx&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;Select type of answer - also hardcoded in Home.jsx" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-745" y="345" width="497" height="317" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;rounded=1;" edge="1" parent="1" source="13" target="15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Start Quiz" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="-690" y="840" width="240" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="15" target="17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Quiz page" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="168" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;curved=1;fontSize=18;" edge="1" parent="1" source="17" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-20" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Quit button send us here" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;rotation=15;fontSize=18;" vertex="1" connectable="0" parent="19">
+                    <mxGeometry x="0.2191" y="359" relative="1" as="geometry">
+                        <mxPoint x="-15" y="-389" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="17" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Welcome, playerName&lt;br style=&quot;font-size: 18px;&quot;&gt;Quiz category&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;Score:&lt;br style=&quot;font-size: 18px;&quot;&gt;Question no&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;Container with the question and the answers&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;Quit button&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre; font-size: 18px;&quot;&gt;&#9;&lt;/span&gt;Next Question&lt;br style=&quot;font-size: 18px;&quot;&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="243" y="323" width="525" height="318" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="21" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Next Question send us to the next question only if we answered to current question" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="331" y="718" width="390" height="215" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;rounded=0;sketch=1;textOpacity=80;spacing=2;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="23" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="When there aren't any questions left we have an submit button" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="400.5" y="1009" width="210" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;sketch=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;labelBorderColor=#3399FF;fontColor=#000000;curved=1;strokeColor=#000066;fontSize=18;" edge="1" parent="1" source="25" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-670" y="1120"/>
+                            <mxPoint x="-890" y="610"/>
+                            <mxPoint x="-850" y="390"/>
+                            <mxPoint x="-770" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="Result page with Go to Home Page button" style="ellipse;whiteSpace=wrap;html=1;fillColor=#b1ddf0;labelBackgroundColor=none;labelBorderColor=#3399FF;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-137" y="1040" width="250" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Quiz Settings" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-372" y="168" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Quiz page" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=0;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="168" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Start Quiz" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=#3399FF;fillColor=#b1ddf0;rounded=1;sketch=1;strokeColor=#10739e;fontColor=#000000;textOpacity=80;spacing=2;fontSize=18;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-690" y="840" width="240" height="95" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
