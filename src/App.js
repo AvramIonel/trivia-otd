@@ -5,12 +5,14 @@ import {
   Route,
   Routes as Switch,
 } from "react-router-dom";
-import "./App.css";
+
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Game from "./pages/game/Game";
 import Home from "./pages/home/Home";
+import Game from "./pages/game/Game";
 import Result from "./pages/result/Result";
+
+import "./App.css";
 
 function App() {
   const [questions, setQuestions] = useState("");
@@ -25,11 +27,7 @@ function App() {
   // const [type, setType] = useState("");
 
   // GET the questions from API
-  const fetchQuestions = async (
-    category = "",
-    difficulty = "",
-    type = ""
-  ) => {
+  const fetchQuestions = async (category = "", difficulty = "", type = "") => {
     const { data } = await axios.get(
       `https://opentdb.com/api.php?amount=10${
         category && `&category=${category}`
